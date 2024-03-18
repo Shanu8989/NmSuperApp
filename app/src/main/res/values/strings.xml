@@ -1,0 +1,222 @@
+<resources>
+    <string name="app_name" translatable="true">Digital Locker</string>
+
+    <string name="type_username" translatable="false">Type username</string>
+    <string name="user_name" translatable="false">User Name</string>
+    <string name="password" translatable="false">Password</string>
+    <string name="log_in" translatable="false">Log in</string>
+    <string name="forgot_password" translatable="false">Forgot Password?</string>
+    <string name="new_user_signup" translatable="false">New user? Signup</string>
+    <string name="enter_password" translatable="false">Enter password</string>
+    <string name="calendar" translatable="false">Calendar</string>
+    <string name="notification" translatable="false">Notification</string>
+    <string name="privacy_and_security_settings" translatable="false">Privacy and Security Settings</string>
+    <string name="required_action_title" translatable="false">Required Action (12)</string>
+    <string name="time_12_min_ago" translatable="false">12 min ago</string>
+    <string name="date_21_june_2023" translatable="false">21 June, 2023</string>
+    <string name="bachelor_degree_experience_certificates" translatable="false">Bachelor Degree, Experience Certificates</string>
+    <string name="bachelor_degree_id" translatable="false">Bachelor Degree, ID</string>
+    <string name="honda_insurance_expire_in" translatable="false">Honda: Insurance expire in 1 month</string>
+    <string name="king_saudi_university" translatable="false">King Saudi University</string>
+    <string name="neom_design_studio" translatable="false">NEOM Design Studio</string>
+    <string name="purpose_value" translatable="false">Recruitment process</string>
+    <string name="registration_number_wwa_5217" translatable="false">Registration Number: WWA 5217</string>
+    <string name="renewal" translatable="false">RENEWAL</string>
+    <string name="sunday_10pm" translatable="false">Sunday  |  10PM</string>
+    <string name="doc_at_hand_key" translatable="false">House Number</string>
+    <string name="rejected" translatable="false">Rejected</string>
+
+    <!---->
+    <string name="required_action">Required Action (12)</string>
+    <string name="document_at_hand">Documents at hand</string>
+    <string name="choose_documents_description">Choose the documents you want to display</string>
+    <string name="aspects">Aspects</string>
+    <string name="possessions">Associated Lockers</string>
+    <string name="you_may_want_to_add_title">You may want to add</string>
+    <string name="privacy_settings_title">Privacy And Security Settings</string>
+    <string name="faqs">Frequently asked questions</string>
+    <string name="add_missing_docs">Add missing documents</string>
+    <string name="home">Home</string>
+    <string name="locker">Locker</string>
+    <string name="services">Services</string>
+    <string name="settings">Settings</string>
+    <string name="help">Help</string>
+    <string name="activity_log">Activity Log</string>
+    <string name="edit_documents_description">Edit documents\nat hand</string>
+    <string name="search">Search</string>
+    <string name="save">Save</string>
+    <string name="cancel">Cancel</string>
+    <string name="revoke">Revoke</string>
+    <string name="share">Share</string>
+    <string name="report">Report miuse </string>
+    <string name="no_results_description">No search found. Please try again!</string>
+    <string name="ok">OK</string>
+    <string name="document_update_success_message">Your document list has been updated successfully.</string>
+    <string name="select_documents_title">Select Documents To Display</string>
+    <string name="need_document_description">Need documents for quick reference!</string>
+    <string name="edit_description">Click edit button to add!</string>
+    <string name="date_of_expiry">Expiry Date</string>
+    <string name="documents">Documents</string>
+    <string name="login">Login</string>
+    <string name="success">Success</string>
+    <string name="details">Details</string>
+    <string name="download">Download</string>
+    <string name="upload">Upload</string>
+    <string name="scan">Scan</string>
+    <string name="retrieve">Retrieve</string>
+    <string name="err_failed">Failed</string>
+    <string name="err_unabletogetocrdata">Unable to extract data from the given image. Please try again</string>
+    <string name="send">Send</string>
+    <string name="confirm">Confirm</string>
+    <string name="add_document_success_message">Document added successfully</string>
+    <string name="document_mismatch_description">Uploaded Wrong document type. Please select correct document type</string>
+    <string name="view_data">View Data</string>
+    <string name="view_image">View Image</string>
+    <string name="remove">Remove</string>
+    <string name="err_document_expired">Document Expired</string>
+    <string name="msg_verification_initiated">Verification Initiated</string>
+    <string name="alert">Alert</string>
+    <string name="edit_alert_message">Do you want to edit the data?</string>
+    <string name="no_documents_alert_message">No Document is available</string>
+    <string name="approved">Approved</string>
+    <string name="btn_add">Add</string>
+    <string name="document_types">DOCUMENT TYPES</string>
+    <string name="loading">Loading</string>
+    <string name="add_what_youre_missing">Add what you\'re missing</string>
+    <string name="document_expired_alert_message">Document got expired.</string>
+    <string name="sorry">Sorry</string>
+    <string name="upsupported_device_alert_message">Your device is not supported to access the NEOM App</string>
+    <string name="results_found">Results found</string>
+    <string name="sort">Sort by</string>
+    <string name="neom_authority">NEOM AUTHORITY</string>
+    <string name="see_all">View All</string>
+    <string name="edit">Edit</string>
+    <string name="data_share_request">Data Share Request</string>
+    <string name="data_share">Data Share</string>
+    <string name="purpose">Purpose:</string>
+    <string name="data_required">Required Data:</string>
+    <string name="time_remaining">Time remaining:</string>
+    <string name="renew">Renew</string>
+    <string name="accepted">Accepted</string>
+    <string name="add_other_document">Add other Document</string>
+    <string name="scan_document">Scan Document</string>
+    <string name="retrieve_document">Retrieve Document</string>
+    <string name="upload_digital_version">Upload Digital Version</string>
+    <string name="pdf_jpg_png_max_size_1mb">PDF, JPG, PNG | Max size: 1MB</string>
+    <string name="edit_manually">Edit Manually</string>
+    <string name="scan_again">Scan Again</string>
+    <string name="clear_filter">Clear</string>
+    <string name="apply_filter">Apply Filter</string>
+    <string name="filer_heading">Filter and Sorting\n</string>
+    <string name="view_document">View Document</string>
+    <string name="document_overview">Document Overview</string>
+    <string name="valid_until_august_31_2028">Valid until: August 31, 2028</string>
+    <string name="document_type">Document type</string>
+    <string name="document_number">Document Number</string>
+    <string name="country_of_issue">Country of Issue</string>
+    <string name="driving_license">Driving License</string>
+    <string name="usa">USA</string>
+    <string name="class_of_license">Class of License</string>
+    <string name="other_document_details">Other Document Details</string>
+    <string name="residential_address">Residential Address</string>
+    <string name="residential_address_placeholder_value">123, Main Street , Talamasee</string>
+    <string name="city">City</string>
+    <string name="city_value_placeholder">Florida 000-1234</string>
+    <string name="height">Height</string>
+    <string name="height_value_placeholder">170cm</string>
+    <string name="eye_color">Eye Color</string>
+    <string name="eye_color_value_placeholder">Blue</string>
+    <string name="state_police_officer_service_no_123456">State Police Officer | Service no 123456</string>
+    <string name="remove_from_documents_at_hand">Remove from documents at hand</string>
+    <string name="child">Child</string>
+    <string name="first_name">First Name</string>
+    <string name="first_name_placeholder">Sophie</string>
+    <string name="middle_name">Middle Name</string>
+    <string name="middle_name_placeholder">--</string>
+    <string name="last_name">Last Name</string>
+    <string name="last_name_placeholder">Smith</string>
+    <string name="sex">Sex</string>
+    <string name="female">Female</string>
+    <string name="date_of_birth">Date of birth</string>
+    <string name="dob_placeholder">01 December 1999</string>
+    <string name="birth_type">This birth was Single/Twic/etc.</string>
+    <string name="single">Single</string>
+    <string name="place_of_birth">Place of Birth</string>
+    <string name="place_of_birth_hospital_name_or_facility">Place of birth - Hospital Name of Facility</string>
+    <string name="pob_facility_name_placeholder">St. John’s Community Health</string>
+    <string name="place_of_birth_facility_street_address">Street Address</string>
+    <string name="pob_facility_street_address_placeholder">1060 Exposition Blvd</string>
+    <string name="pob_facility_city">City</string>
+    <string name="pob_facility_city_placeholder">Los Angeles</string>
+    <string name="pob_facility_country">"Country "</string>
+    <string name="pob_facility_country_placeholder">USA</string>
+    <string name="name_of_parents">Name Of Parents</string>
+    <string name="mother">Mother</string>
+    <string name="kinship">Kinship</string>
+    <string name="father">Father</string>
+    <string name="filter">Filter Documents</string>
+    <string name="inactive">Inactive</string>
+    <string name="actions">Actions:</string>
+    <string name="search_by_name">Search by name</string>
+    <string name="aspects_description">Navigate and interact with your own data</string>
+    <string name="associated_to_me_description">Navigate and interact with your associated lockers</string>
+    <string name="view_details">View details</string>
+    <string name="add_missing_documents">Add missing documents</string>
+    <string name="more">More</string>
+    <string name="forward">Forward</string>
+    <string name="common_error_retry_message">Something went wrong.\\nPlease try again</string>
+    <string name="view_document_details_title">Document Details</string>
+
+    <string name="txt_privacy_security_title">Privacy and Security Settings</string>
+    <string name="txt_privacy_manage_access_title">Manage my locker access with other users</string>
+    <string name="txt_remove_data">Remove Data</string>
+
+
+    <string name="txt_locket_not_share">You are not currently sharing your locker with any other user</string>
+    <string name="txt_access_share_with">Share with adult family members</string>
+    <string name="txt_sharing_with">Sharing with</string>
+    <string name="txt_view_rest_fam_mem"><u>View the rest of my family members</u></string>
+    <string name="txt_share_with_neom">Share with NEOM App User</string>
+    <string name="txt_share_my_locker">Share my Locker</string>
+    <string name="txt_search">Search</string>
+    <string name="txt_digital_txt">Digital ID</string>
+    <string name="txt_digital_txt_dot">Digital ID:</string>
+    <string name="txt_dob">Date of birth</string>
+    <string name="txt_bd">Birth Date:</string>
+    <string name="dob_hint">DD/MM/YYYY</string>
+    <string name="txt_access_rights_settings">Access Rights Settings</string>
+    <string name="txt_sub_access_rights_settings">Select what receiver can do with shared data</string>
+    <string name="txt_sharing_validity">Sharing Validity</string>
+    <string name="txt_touch_id">Touch ID</string>
+    <string name="txt_custom_dialog1">Would you like to give </string>
+    <string name="txt_custom_dialog2">permission to forward your documents to other NEOM users?</string>
+    <string name="txt_otp_verification">Please enter verification code sent to </string>
+    <string name="txt_dummy_num">+966 123 456 789</string>
+    <string name="txt_time_remain">Time remaining:</string>
+    <string name="request_new_code"><u>Request new code</u></string>
+    <string name="txt_time_default">00:00</string>
+    <string name="txt_time_separator">:</string>
+    <string name="txt_time_formatter">00</string>
+    <string name="txt_proceed">Proceed</string>
+    <string name="txt_actions">Actions</string>
+    <string name="txt_remove_data_desc">Are you sure you want to remove all data from your digital locker?</string>
+    <string name="txt_remove_data_title_desc">Your data from Digital locker will get removed</string>
+    <string name="txt_go_to_home">Go to Home</string>
+    <string name="txt_remove_data_title_success_desc">Your data was removed successfully</string>
+    <string name="txt_block_user">Block user</string>
+    <string name="txt_blocked_user">Blocked users</string>
+    <string name="txt_privacy_settings_block_user">Block User</string>
+    <string name="txt_privacy_settings_blocked_user">Blocked User</string>
+    <string name="txt_privacy_settings_blocked_users">Blocked Users</string>
+    <string name="txt_blocked_user_desc">Currently, your list does not have any blocked users. If you wish to block a user, use the button provided below</string>
+    <string name="txt_unblock">Unblock</string>
+    <string name="txt_next">Next</string>
+    <string name="txt_block_reason">Reason for Blocking</string>
+    <string name="txt_add_note_optional">(optional)</string>
+    <string name="txt_multiple_data">Multiple Data requests</string>
+    <string name="txt_block_details">Blocking Details</string>
+    <string name="txt_block_date">Blocking Date</string>
+    <string name="txt_block_time">Blocking Time</string>
+    <string name="txt_blocking_reason">Blocking Reason</string>
+
+</resources>

@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="primaryColor">#13100D</color>
+    <color name="primaryLightColor">#2B2825</color>
+    <color name="primaryDarkColor">#221F1D</color>
+    <color name="primaryTextColor">#13100D</color>
+    <color name="accentColor">#E1E2E1</color>
+
+
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <!--Project colors-->
+    <color name="fr_text_color">#1D1F22</color>
+    <color name="fr_card_text_color">#13100D</color>
+    <color name="fr_red_dark">#DF1E26</color>
+    <color name="fr_label_title_color">#1D1917</color>
+    <color name="fr_label_subtitle_color">#615A54</color>
+    <color name="fr_label_title_disabled_color">#DEDEDE</color>
+    <color name="fr_input_field_color">#79736C</color>
+    <color name="fr_selected_list_item_bg">#F3F3F3</color>
+
+    <!--Primary colors-->
+    <color name="fr_cream">#13100D</color>
+    <color name="fr_black_90">#2B2826</color>
+    <color name="fr_black_75">#4E4C4A</color>
+    <color name="fr_black_50">#888785</color>
+
+    <color name="fr_gold">#EBC03F</color>
+    <color name="fr_darker_gold">#B89535</color>
+
+    <color name="fr_disabled_color">#D6D1C6</color>
+    <color name="fr_primary_light_color">#DEDEDE</color>
+    <color name="fr_background_color">#F6F5F3</color>
+    <!--Primary colors-->
+
+    <!--Secondary colors-->
+    <color name="fr_dark_blue">#003865</color>
+    <color name="fr_light_blue">#007BB5</color>
+    <color name="fr_green">#006B44</color>
+    <color name="fr_red">#E0403F</color>
+    <color name="fr_orange">#F18825</color>
+    <color name="fr_secondary_light_color">#ffff00</color>
+    <color name="fr_cream_secondary">#F1EFE0</color>
+    <color name="fr_selected">#f9ecc5</color>
+    <!--Secondary colors-->
+
+
+    <color name="fr_top_bar_color">#13100D</color>
+    <color name="fr_bottom_nav_bar_color">#2B2825</color>
+    <color name="fr_bottom_nav_bar_selected_color">#FFFFFF</color>
+    <color name="fr_bottom_nav_bar_unselected_color">#FF000000</color>
+    <color name="fr_stroke_color">#262A2523</color>
+    <!--Project colors-->
+
+    <!--UI components-->
+    <color name="transparent">#00000000</color>
+    <!-- card colors -->
+    <color name="card_background">#ffffff</color>
+    <color name="card_shadow_1">#d4d4d4</color>
+    <color name="card_shadow_2">#dddddd</color>
+    <color name="card_detailing">#eee</color>
+    <color name="fr_card_stroke">#D2D2D3</color>
+    <color name="chip_selected">#B89535</color>
+    <color name="fr_form_key_text">#888785</color>
+    <color name="warning_color">#EE5905</color>
+    <color name="button_disable_txt">#71717A</color>
+    <!--UI components-->
+</resources>

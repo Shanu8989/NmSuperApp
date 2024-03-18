@@ -1,0 +1,18 @@
+[submodule "UtilsModule"]
+	path = UtilsModule
+	url = https://github.com/Shanu8989/UtilsModule.git
+[submodule "HomeModule"]
+	path = HomeModule
+	url = https://github.com/Shanu8989/HomeModule.git
+[submodule "LockerModule"]
+	path = LockerModule
+	url = https://github.com/Shanu8989/LockerModule.git
+[submodule "ServiceModule"]
+	path = ServiceModule
+	url = https://github.com/Shanu8989/ServiceModule.git
+[submodule "SettingsModule"]
+	path = SettingsModule
+	url = https://github.com/Shanu8989/SettingsModule.git
+[submodule "HelpModule"]
+	path = HelpModule
+	url = https://github.com/Shanu8989/HelpModule.git

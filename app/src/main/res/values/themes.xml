@@ -1,0 +1,394 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- Base application theme. -->
+    <style name="Theme.DigitalLocker" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/primaryColor</item>
+        <item name="colorPrimaryDark">@color/primaryDarkColor</item>
+        <item name="colorAccent">@color/primaryLightColor</item>
+        <item name="android:fontFamily">@font/brown_regular</item>
+        <item name="toolbarStyle">@style/CustomToolBarStyle</item>
+        <item name="colorPrimaryVariant">@color/purple_700</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/teal_200</item>
+        <item name="colorSecondaryVariant">@color/teal_700</item>
+        <item name="colorOnSecondary">@color/black</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor">?attr/colorPrimaryVariant</item>
+        <!--BottomSheet-->
+        <item name="bottomSheetDialogTheme">@style/CustomBottomSheetDialog</item>
+        <!-- Customize your theme here. -->
+    </style>
+
+    <style name="CustomToolBarStyle" parent="@style/Widget.MaterialComponents.Toolbar">
+        <item name="titleTextColor">@color/white</item>
+        <item name="colorControlNormal">@color/white</item>
+    </style>
+
+    <style name="AppThemeNoActionbar" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/primaryColor</item>
+        <item name="colorPrimaryDark">@color/primaryDarkColor</item>
+        <item name="colorSecondary">@color/fr_cream_secondary</item>
+        <item name="colorAccent">@color/primaryLightColor</item>
+        <item name="android:fontFamily">@font/brown_regular</item>
+        <item name="android:outlineAmbientShadowColor" tools:ignore="NewApi">@android:color/black
+        </item>
+        <item name="android:outlineSpotShadowColor" tools:ignore="NewApi">@android:color/black
+        </item>
+        <item name="android:windowFullscreen">true</item>
+    </style>
+
+    <style name="ToolbarTheme" parent="@style/ThemeOverlay.AppCompat.ActionBar">
+        <!-- Customize color of navigation drawer icon and back arrow -->
+        <item name="colorControlNormal">@color/white</item>
+        <item name="android:textSize">10sp</item>
+        <item name="android:fontFamily">@font/brown</item>
+        <item name="android:windowTranslucentStatus">true</item>
+        <item name="android:windowDrawsSystemBarBackgrounds">false</item>
+    </style>
+
+    <style name="Toolbar.TitleText" parent="TextAppearance.Widget.AppCompat.Toolbar.Title">
+        <item name="android:textSize">10sp</item>
+    </style>
+
+
+    <style name="Theme.ExposedDropdownMenu" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
+        <item name="colorPrimary">@color/primaryColor</item>
+        <item name="colorPrimaryVariant">@color/primaryLightColor</item>
+        <item name="colorOnPrimary">@color/primaryDarkColor</item>
+        <item name="colorSecondary">@color/teal_200</item>
+        <item name="colorSecondaryVariant">@color/teal_700</item>
+        <item name="colorOnSecondary">@color/black</item>
+        <item name="android:statusBarColor">?attr/colorPrimaryVariant</item>
+    </style>
+
+    <!--Custom UI Components-->
+    <style name="App.Custom.Indicator" parent="Widget.Material3.BottomNavigationView.ActiveIndicator">
+        <item name="android:color">@color/fr_cream_secondary</item>
+        <item name="colorSecondary">@color/fr_cream_secondary</item>
+        <item name="android:outlineAmbientShadowColor" tools:ignore="NewApi">@android:color/black
+        </item>
+        <item name="android:outlineSpotShadowColor" tools:ignore="NewApi">@android:color/black
+        </item>
+        <item name="colorSurface">@android:color/white</item>
+        <item name="colorSecondaryContainer">@color/fr_cream_secondary</item>
+    </style>
+    <!--Custom UI Components-->
+
+    <style name="TitleText" parent="@android:style/TextAppearance.Medium">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/fr_text_color</item>
+        <item name="lineHeight">20sp</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:fontFamily">@font/brown</item>
+    </style>
+
+    <style name="SubTitleText" parent="@android:style/TextAppearance.Medium">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/fr_text_color</item>
+        <item name="lineHeight">16sp</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:fontFamily">@font/brown</item>
+    </style>
+
+    <style name="CustomDialogTitleText" parent="@android:style/TextAppearance.Medium">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/fr_text_color</item>
+        <item name="android:lineSpacingExtra">@dimen/dimen_3sp</item>
+        <item name="android:translationY">-1.35sp</item>
+        <item name="lineHeight">16sp</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:fontFamily">@font/brown</item>
+    </style>
+
+    <style name="SubTitleSmallText" parent="@android:style/TextAppearance.Medium">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/fr_black_50</item>
+        <item name="lineHeight">16sp</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:fontFamily">@font/brown</item>
+    </style>
+
+    <style name="SubTitleSmallTextDataReview" parent="@android:style/TextAppearance.Medium">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:lineSpacingExtra">@dimen/dimen_3sp</item>
+        <item name="android:translationY">-1.3sp</item>
+        <item name="android:textColor">@color/fr_form_key_text</item>
+        <item name="lineHeight">16sp</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:fontFamily">@font/brown</item>
+    </style>
+
+    <style name="SubTitleSmallTextGreyColor" parent="@android:style/TextAppearance.Medium">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/fr_black_50</item>
+        <item name="lineHeight">16sp</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:fontFamily">@font/brown</item>
+    </style>
+
+    <style name="SubTitleRequestCodeText" parent="@android:style/TextAppearance.Medium">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:text">@string/request_new_code</item>
+        <item name="lineHeight">16sp</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:fontFamily">@font/brown</item>
+    </style>
+
+    <style name="LockerRowItemTextMediumStyle" parent="@android:style/TextAppearance.Medium">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/fr_black_75</item>
+        <item name="lineHeight">16sp</item>
+        <item name="android:lineSpacingExtra">@dimen/dimen_3sp</item>
+        <item name="android:translationY">-1.4sp</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:fontFamily">@font/brown</item>
+    </style>
+
+    <style name="CircularTitleText" parent="@android:style/TextAppearance.Medium">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="lineHeight">20sp</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:fontFamily">@font/brown</item>
+    </style>
+
+    <style name="OTPRowItemTextMediumStyle" parent="@android:style/TextAppearance.Medium">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/fr_black_75</item>
+        <item name="lineHeight">16sp</item>
+        <item name="android:lineSpacingExtra">@dimen/dimen_3sp</item>
+        <item name="android:translationY">-1.4sp</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:fontFamily">@font/brown</item>
+    </style>
+
+    <style name="LockerRowItemTextSmallStyle" parent="@android:style/TextAppearance.Medium">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/fr_text_color</item>
+        <item name="lineHeight">16sp</item>
+        <item name="android:lineSpacingExtra">@dimen/dimen_3sp</item>
+        <item name="android:translationY">-1.3sp</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:fontFamily">@font/brown</item>
+    </style>
+
+    <style name="CardTitleText" parent="@android:style/TextAppearance.Medium">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/fr_text_color</item>
+        <item name="lineHeight">18sp</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:fontFamily">@font/brown</item>
+    </style>
+
+    <style name="NormalText" parent="@android:style/TextAppearance.Medium">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/fr_text_color</item>
+        <item name="lineHeight">14sp</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:fontFamily">@font/brown</item>
+    </style>
+
+    <style name="FormTitleText" parent="@android:style/TextAppearance.Medium">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/fr_text_color</item>
+        <item name="lineHeight">14sp</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:fontFamily">@font/brown</item>
+    </style>
+
+    <style name="FormSubTitleText" parent="@android:style/TextAppearance.Medium">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/fr_text_color</item>
+        <item name="lineHeight">14sp</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:layout_marginTop">0dp</item>
+        <item name="android:layout_marginBottom">@dimen/fr_small_screen_padding</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:fontFamily">@font/brown</item>
+    </style>
+
+    <style name="FormKeyText" parent="@android:style/TextAppearance.Medium">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/fr_text_color</item>
+        <item name="lineHeight">14sp</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:fontFamily">@font/brown</item>
+    </style>
+
+    <style name="FormValueText" parent="@android:style/TextAppearance.Medium">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/fr_text_color</item>
+        <item name="lineHeight">16sp</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:layout_marginTop">18dp</item>
+        <item name="android:layout_marginBottom">@dimen/default_small_screen_padding</item>
+        <item name="android:fontFamily">@font/brown</item>
+    </style>
+
+    <style name="privacySettingsTitleStyle" parent="@android:style/TextAppearance.Medium">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/fr_text_color</item>
+        <item name="lineHeight">16sp</item>
+        <item name="android:lineSpacingExtra">@dimen/dimen_3sp</item>
+        <item name="android:translationY">-1.4sp</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:fontFamily">@font/brown</item>
+    </style>
+
+    <style name="privacySettingsOtherTitleStyle" parent="@android:style/TextAppearance.Medium">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/fr_text_color</item>
+        <item name="lineHeight">16sp</item>
+        <item name="android:lineSpacingExtra">@dimen/dimen_3sp</item>
+        <item name="android:translationY">-1.35sp</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:fontFamily">@font/brown</item>
+    </style>
+
+    <style name="ButtonText" parent="@android:style/TextAppearance.Medium">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/fr_text_color</item>
+        <item name="lineHeight">20sp</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:fontFamily">@font/brown</item>
+    </style>
+
+    <style name="manageAccessSubTitle" parent="@android:style/TextAppearance.Medium">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/fr_text_color</item>
+        <item name="lineHeight">20sp</item>
+        <item name="android:lineSpacingExtra">@dimen/dimen_7sp</item>
+        <item name="android:textSize">@dimen/dimen_16sp</item>
+        <item name="android:fontFamily">@font/brown</item>
+    </style>
+
+    <style name="CommonButtonText" parent="@android:style/TextAppearance.Medium">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/fr_text_color</item>
+        <item name="lineHeight">14sp</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:fontFamily">@font/brown</item>
+    </style>
+
+
+    <style name="BottomIndicator" parent="Widget.Material3.BottomNavigationView.ActiveIndicator">
+        <item name="android:color">@color/bottom_nav_color</item>
+    </style>
+
+    <style name="Widget.Material3.BottomNavigationView.ActiveIndicator" parent="">
+        <item name="android:width">92dp</item>
+        <item name="android:height">49dp</item>
+        <item name="android:gravity">center</item>
+        <item name="shapeAppearance">
+            @style/ShapeAppearance.Material3.NavigationBarView.ActiveIndicator
+        </item>
+    </style>
+
+    <style name="CustomBottomSheetDialog" parent="@style/ThemeOverlay.MaterialComponents.BottomSheetDialog">
+        <item name="bottomSheetStyle">@style/CustomBottomSheet</item>
+    </style>
+
+    <style name="CustomBottomSheet" parent="Widget.MaterialComponents.BottomSheet">
+        <item name="shapeAppearanceOverlay">@style/CustomShapeAppearanceBottomSheetDialog</item>
+    </style>
+
+    <style name="CustomShapeAppearanceBottomSheetDialog">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSizeTopRight">16dp</item>
+        <item name="cornerSizeTopLeft">16dp</item>
+        <item name="cornerSizeBottomRight">0dp</item>
+        <item name="cornerSizeBottomLeft">0dp</item>
+    </style>
+
+    <style name="FilterButtonStyle" parent="Widget.MaterialComponents.Button.OutlinedButton">
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">@color/fr_text_color</item>
+        <item name="strokeColor">@color/fr_card_stroke</item>
+        <item name="strokeWidth">2dp</item>
+        <item name="cornerRadius">4dp</item>
+    </style>
+
+    <style name="RenewButtonStyle" parent="Widget.MaterialComponents.Button.OutlinedButton">
+        <item name="android:textSize">14sp</item>
+        <item name="android:letterSpacing">-0.01</item>
+        <item name="android:textColor">@color/fr_text_color</item>
+        <item name="strokeColor">@color/fr_text_color</item>
+        <item name="strokeWidth">2dp</item>
+    </style>
+
+    <style name="CustomButton2Style" parent="Widget.MaterialComponents.Button.OutlinedButton">
+        <item name="android:textSize">14sp</item>
+        <item name="android:lineSpacingExtra">@dimen/dimen_3sp</item>
+        <item name="android:letterSpacing">-0.01</item>
+        <item name="android:textColor">@color/fr_text_color</item>
+        <item name="strokeColor">@color/fr_text_color</item>
+        <item name="strokeWidth">2dp</item>
+    </style>
+
+    <style name="CustomButtonBlackBgStyle" parent="Widget.MaterialComponents.Button.OutlinedButton">
+        <item name="android:textSize">14sp</item>
+        <item name="android:lineSpacingExtra">@dimen/dimen_3sp</item>
+        <item name="android:letterSpacing">-0.01</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="strokeColor">@color/fr_text_color</item>
+        <item name="strokeWidth">2dp</item>
+    </style>
+
+    <style name="CustomButtonWhiteBgStyle" parent="Widget.MaterialComponents.Button.OutlinedButton">
+        <item name="android:textSize">14sp</item>
+        <item name="android:lineSpacingExtra">@dimen/dimen_3sp</item>
+        <item name="android:letterSpacing">-0.01</item>
+        <item name="android:textColor">@color/fr_text_color</item>
+        <item name="strokeColor">@color/fr_text_color</item>
+        <item name="strokeWidth">2dp</item>
+    </style>
+
+    <style name="otp_edit_style">
+        <item name="android:inputType">number</item>
+        <item name="android:maxLength">1</item>
+        <item name="android:layout_width">35dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:cursorVisible">true</item>
+        <item name="android:focusable">true</item>
+        <item name="android:focusableInTouchMode">true</item>
+    </style>
+
+    <style name="OutlinedButtonStyle" parent="Widget.MaterialComponents.Button.OutlinedButton">
+        <item name="android:textSize">14sp</item>
+        <item name="android:letterSpacing">-0.01</item>
+        <item name="strokeWidth">1dp</item>
+        <item name="android:radius">8dp</item>
+
+    </style>
+
+</resources>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:ignore="AlwaysShowAction">
+    <item
+        android:id="@+id/home_menu_item"
+        android:icon="@drawable/nav_icon_home"
+        android:title="@string/home"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/locker_menu_item"
+        android:icon="@drawable/nav_icon_locker"
+        android:title="@string/locker"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/services_menu_item"
+        android:icon="@drawable/nav_icon_services"
+        android:title="@string/services"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/settings_menu_item"
+        android:icon="@drawable/nav_icon_settings"
+        android:title="@string/settings"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/help_menu_item"
+        android:icon="@drawable/nav_icon_help"
+        android:title="@string/help"
+        app:showAsAction="always" />
+</menu>

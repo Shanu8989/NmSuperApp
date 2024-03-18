@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation_graph.xml"
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.shanu.homemodule.HomeFragment"
+        android:label="HomeFragment"
+        tools:layout="@layout/fragment_home" />
+
+    <fragment
+        android:id="@+id/lockerLandingFragment"
+        android:name="com.shanu.lockermodule.LockerLandingFragment"
+        android:label="LockerLandingFragment"
+        tools:layout="@layout/fragment_locker_landing" />
+
+    <fragment
+        android:id="@+id/settingsFragment"
+        android:name="com.shanu.settingsmodule.SettingsFragment"
+        android:label="SettingsFragment"
+        tools:layout="@layout/fragment_settings" />
+
+    <fragment
+        android:id="@+id/serviceFragment"
+        android:name="com.shanu.servicemodule.ServicesFragment"
+        android:label="ServicesFragment"
+        tools:layout="@layout/fragment_services" />
+
+    <fragment
+        android:id="@+id/helpFragment"
+        android:name="com.shanu.helpmodule.HelpFragment"
+        android:label="HelpFragment"
+        tools:layout="@layout/fragment_help" />
+
+</navigation>

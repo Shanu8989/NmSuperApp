@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:animateLayoutChanges="true"
+    android:background="@color/white"
+    tools:context=".presentation.activity.LandingActivity">
+
+    <RelativeLayout
+        android:id="@+id/appbar_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/gradient_toolbar_bg"
+        android:elevation="4dp"
+        tools:ignore="MissingConstraints">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/header_iv"
+            android:layout_width="163dp"
+            android:layout_height="33dp"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="18dp"
+            android:visibility="gone"
+            android:layout_marginTop="@dimen/default_normal_screen_padding"
+            android:scaleType="fitEnd"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/landing_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_toEndOf="@+id/header_iv"
+            android:background="@color/transparent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/header_iv"
+            app:layout_constraintTop_toTopOf="parent"
+            app:theme="@style/ToolbarTheme"
+            android:visibility="gone"
+            app:titleTextColor="@color/black" />
+
+
+        <RelativeLayout
+            android:id="@+id/profile_rl"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/landing_toolbar"
+            android:layout_marginBottom="@dimen/default_small_screen_padding"
+            android:clipChildren="false"
+            android:paddingHorizontal="@dimen/default_normal_screen_padding">
+
+            <RelativeLayout
+                android:id="@+id/profile_picker_rl"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="@dimen/default_small_screen_padding"
+                android:foregroundGravity="center_vertical"
+                android:paddingHorizontal="@dimen/default_small_screen_padding">
+
+                <com.shanu.utilsmodule.CircleImageView
+                    android:id="@+id/profile_img_iv"
+                    android:layout_width="33dp"
+                    android:layout_height="33dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginEnd="@dimen/default_small_screen_padding" />
+
+                <LinearLayout
+                    android:id="@+id/profile_select_ll"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toEndOf="@id/profile_img_iv"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/profile_name_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:lineHeight="11sp"
+                        android:text="William"
+                        android:textAppearance="@style/NormalText" />
+
+                    <TextView
+                        android:id="@+id/profile_type_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:lineHeight="11sp"
+                        android:text="Personal Account"
+                        android:textAppearance="@style/NormalText" />
+
+                </LinearLayout>
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:layout_width="@dimen/default_normal_screen_padding"
+                    android:layout_height="@dimen/default_normal_screen_padding"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="12dp"
+                    android:layout_marginEnd="@dimen/default_small_screen_padding"
+                    android:layout_toEndOf="@id/profile_select_ll"
+                    android:scaleType="centerInside"
+                    app:srcCompat="@drawable/profile_chevron_down" />
+
+            </RelativeLayout>
+
+            <com.shanu.utilsmodule.CircleImageView
+                android:id="@+id/profile_next_profile"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="@dimen/default_small_screen_padding"
+                android:visibility="gone"
+                android:layout_toEndOf="@id/profile_picker_rl"
+                android:scaleType="centerCrop" />
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottomNavigationView"
+        android:layout_width="match_parent"
+        android:layout_height="72dp"
+        android:clipChildren="false"
+        app:backgroundTint="@color/white"
+        app:elevation="20dp"
+        app:itemIconSize="18dp"
+        app:itemIconTint="@color/bottom_nav_color"
+        app:itemTextColor="@color/bottom_nav_color"
+        app:itemTextAppearanceActive="@style/NormalText"
+        app:itemActiveIndicatorStyle="@style/BottomIndicator"
+        app:itemTextAppearanceInactive="@style/NormalText"
+        android:foregroundGravity="center"
+        app:labelVisibilityMode="selected"
+        app:itemPaddingTop="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:menu="@menu/bottom_nav_menu" />
+
+    <FrameLayout
+        android:id="@+id/flFragment"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@id/bottomNavigationView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/appbar_layout"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/fr_card_stroke"
+        android:translationY="-0.12dp"
+        app:layout_constraintBottom_toTopOf="@id/bottomNavigationView" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

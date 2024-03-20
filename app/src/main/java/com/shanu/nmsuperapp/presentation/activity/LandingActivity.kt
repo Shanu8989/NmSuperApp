@@ -1,11 +1,13 @@
 package com.shanu.nmsuperapp.presentation.activity
 
 import android.annotation.SuppressLint
+import android.content.Intent
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.Menu
 import android.view.MenuItem
 import android.view.View
+import androidx.activity.OnBackPressedCallback
 import androidx.appcompat.app.AppCompatActivity
 import androidx.appcompat.widget.AppCompatImageView
 import androidx.appcompat.widget.SearchView
@@ -46,10 +48,59 @@ class LandingActivity : AppCompatActivity() {
         supportActionBar?.setDisplayHomeAsUpEnabled(false)
 
         val firstFragment = HomeFragment()
+        firstFragment.registerHomeModuleDataCallback {
+            this@LandingActivity.onBackPressedDispatcher.addCallback(
+                this,
+                object : OnBackPressedCallback(true) {
+                    override fun handleOnBackPressed() {
+                        navigateToLoginActivity()
+                    }
+                })
+        }
+
         val secondFragment = LockerLandingFragment()
+        secondFragment.registerLockerModuleDataCallback {
+            this@LandingActivity.onBackPressedDispatcher.addCallback(
+                this,
+                object : OnBackPressedCallback(true) {
+                    override fun handleOnBackPressed() {
+                        navigateToLoginActivity()
+                    }
+                })
+        }
+
         val thirdFragment = ServicesFragment()
+        thirdFragment.registerServicesModuleDataCallback {
+            this@LandingActivity.onBackPressedDispatcher.addCallback(
+                this,
+                object : OnBackPressedCallback(true) {
+                    override fun handleOnBackPressed() {
+                        navigateToLoginActivity()
+                    }
+                })
+        }
+
         val fourthFragment = SettingsFragment()
+        fourthFragment.registerSettingsModuleDataCallback {
+            this@LandingActivity.onBackPressedDispatcher.addCallback(
+                this,
+                object : OnBackPressedCallback(true) {
+                    override fun handleOnBackPressed() {
+                        navigateToLoginActivity()
+                    }
+                })
+        }
+
         val fifthFragment = HelpFragment()
+        fifthFragment.registerHelpModuleDataCallback {
+            this@LandingActivity.onBackPressedDispatcher.addCallback(
+                this,
+                object : OnBackPressedCallback(true) {
+                    override fun handleOnBackPressed() {
+                        navigateToLoginActivity()
+                    }
+                })
+        }
 
         setCurrentFragment(firstFragment, "")
 
@@ -78,6 +129,13 @@ class LandingActivity : AppCompatActivity() {
         bottomNavView.labelVisibilityMode = NavigationBarView.LABEL_VISIBILITY_LABELED
     }
 
+    private fun navigateToLoginActivity() {
+        Intent(this@LandingActivity, LoginActivity::class.java).apply {
+            startActivity(this)
+            finish()
+        }
+    }
+
     override fun onCreateOptionsMenu(menu: Menu): Boolean {
         val inflater = menuInflater
 
@@ -91,7 +149,7 @@ class LandingActivity : AppCompatActivity() {
         val searchView: SearchView = searchItem.actionView as SearchView
 
         //ToDo: Fix search expansion. Refer Neom RAB
-        searchView.setOnSearchClickListener(View.OnClickListener {
+        searchView.setOnSearchClickListener {
             if (!isSearchExpanded) {
                 headerIv.visibility = View.GONE
                 isSearchExpanded = true
@@ -99,7 +157,7 @@ class LandingActivity : AppCompatActivity() {
                 headerIv.visibility = View.VISIBLE
                 isSearchExpanded = false
             }
-        })
+        }
 
         // below line is to call set on query text listener method.
         searchView.setOnQueryTextListener(object : SearchView.OnQueryTextListener,
